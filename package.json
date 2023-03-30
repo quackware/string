@@ -1,5 +1,5 @@
 {
-  "name": "string",
-  "description": "$QUACKWRE_PACKAGE_DESCRIPTION",
+  "name": "@quackware/string",
+  "description": "Type safe string utility functions that also preserve string constant types",
   "version": "0.0.1"
 }

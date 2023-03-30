@@ -4,4 +4,4 @@
   </a>
 </h1>
 
-<p align="center">Type safe string utility functions</p>
+<p align="center">Type safe string utility functions that also preserve string constant types</p>
