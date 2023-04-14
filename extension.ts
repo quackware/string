@@ -1,4 +1,5 @@
 import { ensurePrefix } from "./prefix.ts";
+import { ensureSuffix } from "./suffix.ts";
 
 export type Extension = `.${string}`;
 
@@ -8,8 +9,8 @@ export type Extension = `.${string}`;
 export function ensureExtension<Path extends string, Ext extends Extension>(
   path: Path,
   extension: Ext,
-): `${string}${Ext}` {
-  return ensurePrefix(path, extension) as `${string}${Ext}`;
+) {
+  return ensureSuffix(path, extension);
 }
 
 export function ensureLeadingPeriod<Path extends string>(path: Path) {

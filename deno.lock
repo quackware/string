@@ -40,7 +40,7 @@
     "https://raw.githubusercontent.com/quackware/test-helpers/master/mod.ts": "b2c4b4326dea536ea813da28e0d671a075ea6103c60095e91a6493d9b525d6bd",
     "https://raw.githubusercontent.com/quackware/test-helpers/master/serializer.ts": "cd46b35e27dd39129b6c427759330bb2c612aff291bfceebbf0a4c8da559083b",
     "https://raw.githubusercontent.com/quackware/test-helpers/master/snapshot.ts": "d986b080575e9aa2adf9ddf72055caf320f5c16023c0593775035a60ddf6d7d5",
-    "https://raw.githubusercontent.com/quackware/types/master/array.ts": "761dcb5be7636cc65bdfc87048e00853fc567864a616437ea9fea8b4f3f542b1",
-    "https://raw.githubusercontent.com/quackware/types/master/conditionals.ts": "1c21fbb01c32adebf59ebb9393e626d4e98525a733fb13e425dd9c5d7c4445a5"
+    "https://raw.githubusercontent.com/quackware/types/master/array.ts": "53ffaa9f66c40fd321b9ff27ede10e9a11c395a881e56dc5e1a767c3cd78fae7",
+    "https://raw.githubusercontent.com/quackware/types/master/conditionals.ts": "43bbf7619e03e24e42a49a4f0609f6de9415ba5a34546c0c890f5077a14d98d9"
   }
 }
