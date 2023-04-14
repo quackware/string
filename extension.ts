@@ -1,16 +1,17 @@
-import { extname } from "https://deno.land/std@0.181.0/path/mod.ts";
+import { ensurePrefix } from "./prefix.ts";
+
+export type Extension = `.${string}`;
 
 /**
- * Ensure the given path ends in the given extension
+ * Ensures the given {@linkcode path} ends in {@linkcode extension}.
  */
-export function ensureExtension<Path extends string, Extension extends `.${string}`>(
+export function ensureExtension<Path extends string, Ext extends Extension>(
   path: Path,
-  extension: Extension,
-): `${string}${Extension}` {
-  const ext = extname(path);
-  if (ext === extension) {
-    return path as `${string}${Extension}`;
-  } else {
-    return `${path}${extension}` as const;
-  }
+  extension: Ext,
+): `${string}${Ext}` {
+  return ensurePrefix(path, extension) as `${string}${Ext}`;
+}
+
+export function ensureLeadingPeriod<Path extends string>(path: Path) {
+  return ensurePrefix(path, ".");
 }

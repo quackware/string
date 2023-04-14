@@ -1,5 +1,5 @@
 {
   "name": "@quackware/string",
-  "description": "Type safe string utility functions that also preserve string constant types",
+  "description": "Type safe string utility functions that preserve string literal types",
   "version": "0.0.1"
 }

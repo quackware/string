@@ -1,4 +1,4 @@
-import { stripPrefix, stripPrefixProperties } from "../prefix.ts";
+import { ensurePrefix, stripPrefix, stripPrefixProperties } from "../prefix.ts";
 import { assertEquals, assertObjectMatch } from "./deps.ts";
 
 Deno.test("prefix", async (t) => {
@@ -13,5 +13,10 @@ Deno.test("prefix", async (t) => {
     };
 
     assertObjectMatch(stripPrefixProperties(env, "QUACKWARE_"), { TOKEN: "foo", "QAUCKWARE_MISPELL": "bar" });
+  });
+
+  await t.step("ensurePrefix", () => {
+    assertEquals(ensurePrefix("ts", "."), ".ts");
+    assertEquals(ensurePrefix(".ts", "."), ".ts");
   });
 });
