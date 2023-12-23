@@ -1,20 +1,4 @@
-/**
- * String replacement
- *
- * @example
- *
- * type Test = Replace<`{foo: "\${GITHUB_ENV}"}`, `\${GITHUB_ENV}`, `production`>;
- * const foo: Test = "{foo: \"production\"}"
- */
-export type Replace<
-  Input extends string,
-  Search extends string,
-  Replacement extends string,
-  Options extends { all?: boolean } = {},
-> = Input extends `${infer Head}${Search}${infer Tail}`
-  ? Options["all"] extends true ? Replace<`${Head}${Replacement}${Tail}`, Search, Replacement, Options>
-  : `${Head}${Replacement}${Tail}`
-  : Input;
+import type { Replace } from "https://git.quack.id/types/replace.ts";
 
 /**
  * A type safe string replace function
