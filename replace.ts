@@ -27,3 +27,5 @@ export function replace<
     return target.replace(searchValue, replaceValue) as Replace<TargetInput, SearchValue, ReplaceValue, { all: All }>;
   }
 }
+
+export type { Replace };
